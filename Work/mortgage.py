@@ -21,5 +21,7 @@ while principal > 0:
     else:
         principal += (principal*interest_rate)/12 - monthly_payment
         total_paid += monthly_payment
+    
+    print(total_months, round(total_paid, 2), round(principal, 2))
 
-print('Total paid:', total_paid, 'total months', total_months)
+print('Total paid:', total_paid, '\nTotal months', total_months)
